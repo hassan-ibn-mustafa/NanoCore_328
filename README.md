@@ -1,6 +1,6 @@
-# Arduino Nano Development Board 🚀
+# NanoCore 328 Development Board 🚀
 
-Welcome to the repository for the **Arduino Nano Development Board**, a custom-designed, compact AVR microcontroller board compatible with the Arduino ecosystem.
+Welcome to the repository for the **NanoCore 328 Development Board**, a custom-designed, compact AVR microcontroller board compatible with the Arduino ecosystem.
 
 👤 **Designed by:** Hassan Mustafa Hashem | Industrial Electronics & Control Engineering.
 
