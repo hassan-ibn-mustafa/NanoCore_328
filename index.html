@@ -9,38 +9,49 @@
 
 <style>
 :root {
-    --brand-red: #d11c1c;
-    --brand-black: #1a1a1a;
-    --bg-color: #f4f5f7;
-    --text-color: #333;
+    /* Primary Colors */
+    --brand-crimson: #c0392b;
+    --bg-page: #0e0e0e;
+    --bg-card: #1a1a1a;
+    --bg-box: #262626;
+    
+    /* Text & Borders */
+    --text-primary: #e8e8e8;
+    --text-muted: #7a7a7a;
+    --border-light: rgba(255, 255, 255, 0.08);
+
+    /* Category Accents */
+    --accent-pcb: #7c3aed; /* For PCB Design elements */
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--bg-color);
+    background: var(--bg-page);
     margin: 0;
-    color: var(--text-color);
+    color: var(--text-primary);
     line-height: 1.6;
 }
 
 header {
-    background: #ffffff;
+    background: var(--bg-card);
     padding: 30px 20px 20px;
     text-align: center;
-    border-bottom: 4px solid var(--brand-red);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-bottom: 2px solid var(--border-light);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .logo {
     max-width: 260px;
     height: auto;
     margin-bottom: 8px;
+    /* Optional: filter to make dark logos pop if needed */
+    /* filter: brightness(0) invert(1); */
 }
 
 header p {
     margin: 0;
     font-size: 13px;
-    color: #666;
+    color: var(--text-muted);
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -50,9 +61,10 @@ header p {
     max-width: 1050px;
     margin: 50px auto;
     padding: 45px;
-    background: #ffffff;
+    background: var(--bg-card);
     border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
 
 .project-header {
@@ -63,11 +75,11 @@ header p {
     font-size: 32px;
     margin: 0;
     font-weight: 700;
-    color: var(--brand-black);
+    color: var(--text-primary);
 }
 
 .project-subtitle {
-    color: #666;
+    color: var(--text-muted);
     margin-top: 8px;
     font-size: 15px;
 }
@@ -80,27 +92,41 @@ header p {
 }
 
 .summary-box {
-    background: #fafafa;
+    background: var(--bg-box);
     padding: 18px;
-    border-left: 4px solid var(--brand-red);
+    border-left: 4px solid var(--accent-pcb); /* Using PCB Design Category Color */
     border-radius: 6px;
     font-size: 14px;
+    color: var(--text-primary);
+    border-top: 1px solid var(--border-light);
+    border-right: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .viewer-container {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-light);
     margin-bottom: 40px;
+    background: var(--bg-page); /* Fallback while iframe loads */
 }
 
 .section h3 {
     margin-top: 35px;
     margin-bottom: 15px;
     font-size: 20px;
-    border-left: 4px solid var(--brand-red);
+    border-left: 4px solid var(--brand-crimson);
     padding-left: 12px;
+    color: var(--text-primary);
+}
+
+.section p, .section li {
+    color: var(--text-muted);
+}
+
+.section strong {
+    color: var(--text-primary);
 }
 
 ul {
@@ -115,10 +141,10 @@ footer {
     text-align: center;
     padding: 25px;
     margin-top: 60px;
-    background-color: var(--brand-black);
-    color: #aaa;
+    background-color: var(--bg-page);
+    color: var(--text-muted);
     font-size: 13px;
-    border-top: 3px solid var(--brand-red);
+    border-top: 1px solid var(--border-light);
 }
 </style>
 </head>
