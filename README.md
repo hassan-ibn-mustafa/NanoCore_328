@@ -9,7 +9,7 @@ Welcome to the repository for the **NanoCore 328 Development Board**, a custom-d
 ## 📖 Project Overview
 This project is a complete hardware design (Schematic & PCB) of an ATmega328P-based development board. It is engineered to facilitate rapid prototyping for industrial control, automation, and embedded systems applications. 
 
-🌐 **[Click Here to View the Interactive 3D Board & Project Website](https://hassan-ibn-mustafa.github.io/Arduino_Nano/)**
+🌐 **[Click Here to View the Interactive 3D Board & Project Website](https://hassan-ibn-mustafa.github.io/NanoCore_328/)**
 
 ---
 
